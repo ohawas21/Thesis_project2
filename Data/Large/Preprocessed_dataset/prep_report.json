@@ -1,0 +1,57 @@
+{
+  "input": "Data\\Large\\weatherHistory.csv",
+  "rows": 96429,
+  "cols": 12,
+  "label_source_column": "Apparent Temperature (C)",
+  "label_bins_used": [
+    1.0,
+    32143.66666666666,
+    64286.33333333332,
+    96429.0
+  ],
+  "missing_before": {
+    "Summary": 0,
+    "Precip Type": 517,
+    "Temperature (C)": 0,
+    "Apparent Temperature (C)": 0,
+    "Humidity": 0,
+    "Wind Speed (km/h)": 0,
+    "Wind Bearing (degrees)": 0,
+    "Visibility (km)": 0,
+    "Loud Cover": 0,
+    "Pressure (millibars)": 0,
+    "Daily Summary": 0
+  },
+  "missing_after": {
+    "Summary": 0,
+    "Precip Type": 0,
+    "Temperature (C)": 0,
+    "Apparent Temperature (C)": 0,
+    "Humidity": 0,
+    "Wind Speed (km/h)": 0,
+    "Wind Bearing (degrees)": 0,
+    "Visibility (km)": 0,
+    "Loud Cover": 0,
+    "Pressure (millibars)": 0,
+    "Daily Summary": 0
+  },
+  "encoding_info": {
+    "one_hot_columns": [
+      "Summary",
+      "Precip Type"
+    ],
+    "skipped_text_columns": [
+      "Daily Summary"
+    ]
+  },
+  "outputs": {
+    "clean_csv": "Data\\Large\\Preprocessed_dataset\\clean_weather.csv",
+    "prepared_for_models_csv": "Data\\Large\\Preprocessed_dataset\\prepared_for_models.csv"
+  },
+  "notes": {
+    "numeric_standardized": true,
+    "categorical_one_hot_low_card": true,
+    "free_text_kept_in_clean_only": true,
+    "datetime_index": true
+  }
+}
